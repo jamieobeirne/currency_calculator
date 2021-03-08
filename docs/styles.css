@@ -1,0 +1,121 @@
+/*James O’Beirne
+M4.254 - Desarrollo front-end con framew. JavaScript aula 2
+PEC1 - Introducción al desarrollo frontend
+07 de Marzo de 2021*/
+
+:root{
+    --primary-color:#4398d1;
+    /*--primary-color: #5fbaa7;*/
+}
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background:#f4f4f4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    margin: 0;
+    padding:20px;
+}
+
+h1{
+    color: var(--primary-color);
+}
+
+p{
+    text-align: center;
+    font-size: 22px;
+}
+
+button{
+    color:white;
+    background: var(--primary-color);
+    cursor:pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 14px;
+    border:0;
+}
+
+.money-img{
+    width: 100px;
+}
+
+.currency{
+    padding: 50px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select{
+    padding: 10px 30px 10px 10px;
+    appearance:none;
+    --webkit--appearance:none;
+    --moz-appearance:none;
+    font-size:15px;
+    background: transparent;
+    background-image: url(img/angle-down-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 50px 50%;
+    background-size: 12px auto ;
+}
+
+.currency input{
+    font-size:45px;
+    text-align: right;
+    background:transparent;
+    border:0;
+}
+
+
+.swap-rate-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate{
+    color: var(--primary-color);
+    font-size: 18px; 
+    padding: 0 16px;
+}
+
+select:focus, button:focus, input:focus{
+    outline:0;
+}
+
+
+.estado_de_espera{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+
+.iconAttribute{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:10px;
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+
+.iconAttribute a{
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor:pointer;
+}
+
+
+@media (max-width: 600px){
+    .currency input{
+        width: 200px;
+    }
+}
